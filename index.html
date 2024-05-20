@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/effects_styles.css">
+    <link rel="stylesheet" href="../stylesheets/general_styles.css">
+    <script src="../javascripts/animations.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Rudolf_Hoffmann">Rudolf Hoffmann</a></li>
+                <li><a href="#Short_Bio">Short Bio</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Rudolf_Hoffmann" id="Rudolf_Hoffmann">
+        <h1>Rudolf Hoffmann</h1>
+        <p>Student at HTW Berlin, Germany</p>
+        <p>Computational Science and Engineering</p>
+    </div>
+    <article class="Short_Bio" id="Short_Bio">
+        <h2>Short Bio</h2>
+        <img src="../images/profile_pic.png" alt="Profile Image" class="profile-image">
+        <ul>
+            <li>Name: Rudolf Hoffmann</li>
+            <li>Age: 24</li>
+            <li>Nationality: German</li>
+            <li>Home University: HTW Berlin, Germany</li>
+            <li>Major: Computational Science & Engineering (BA)</li>
+            <li>Current Occupation: Exchange Student at SIT Tokyo, Japan</li>
+        </ul>
+        <p><button onclick="toggleText('hiddenText')">Expand</button></p>
+        <div id="hiddenText">
+            <p>Hey, I am Rudolf and currently i a am in Tokyo, Japan taking part in the Sandwhich Programm of the
+                Shibaura Institute of Technology. I am studying Computational Science and Engineering at the HTW Berlin
+                and I am in my 6th semester. I am interested in Software Development, Data Science and Machine Learning.
+                I am looking forward to work on interesting projects and to meet new people. I am always open for new opportunities and
+                challenges. Feel free to contact me.
+            </p>
+        </div>
+    </article>
+    <article class="Projects" id="Projects">
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="gallery">
+                <ul>
+                    <li id="I">2021 | University Project <br>Build your own Website | HTML, CSS, JavaScript </li>
+                    <li id="II">2022/23 | University Project <br>Powerpoint Add-On Featuring Image Generation | C#, REST</li>
+                    <li id="III">2023 | University Project <br>App Developement |Flutter(Dart), JavaScript, Arango DB, Postman</li>
+                    <li id="IV">2023/24 | University Project <br>Analogue/Digital Synthesizer | C++, C, Hardware</li>
+                    <li id="V">Formula Student greenBEAR</li>
+                    <li id="VI">Campus Kino</li>
+                    <li id="VII">StuPa</li>
+                </ul>
+                <div class="buttons"></div>
+                    <button onclick="toggleText('I')">I</button>
+                    <button onclick="toggleText('II')">II</button>
+                    <button onclick="toggleText('III')">III</button>
+                    <button onclick="toggleText('IV')">IV</button>
+                    <button onclick="toggleText('V')">V</button>
+                    <button onclick="toggleText('VI')">VI</button>
+                    <button onclick="toggleText('VII')">VII</button>
+                </div>
+        </div>
+    </article>
+    <article class="Work" id="Work">
+        <div class="section">
+            <h2>Work</h2>
+            <ul>
+                <li>Student Assistant at <a href="https://www.dzhw.eu/" target="_blank" title="Deutsche Zentrum für Hochschul- und Wissenschaftsforschung"> DZHW</a><br> Employment period: Feb 2023 to Feb 2024 <br> Worked on: NACAPS Panel Study <br> STATA and Tableau</li>
+                <li>Student Assistant at Project <a href="https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/projekt/?eid=3418" target="_blank" title=" TrustAdHocAI ">TAHAI</a> <br>Employment Period: June 2023 until today <br>Worked on: Image Classification Benchmarktool and Dashboard <br> python and streamlit</li>
+            </ul>
+        </div>
+    </article>
+    <article class="Contact" id="Contact">
+        <div class="section">
+            <h2>Contact & Location</h2>
+            <ul>
+                <!-- <li><a href="mailto:your-email@example.com" target="_blank"><img
+                            src="../images/Gmail_icon_(2020).svg" alt="Mail Logo"></a> </li>
+                <li><a href="https://github.com/your-github-profile" target="_blank"><img
+                            src="../images/github-mark.svg" alt="GitHub Logo"></a> </li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img
+                            src="../images/LinkedIn-In-Blue-96.png" alt="LinkedIn Logo"></a> </li> -->
+                            <li><a href="mailto:your-email@example.com" target="_blank">Mail to</a> </li>
+                    <li><a href="https://github.com/your-github-profile" target="_blank">Github</a> </li>
+                    <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> </li>
+            </ul>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.674888285783!2d139.784572327921!3d35.66053276332532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889a07930e2f9%3A0x62e41ee20b961991!2sShibaura%20Institute%20of%20Technology%20Toyosu%20Campus!5e0!3m2!1sde!2sjp!4v1715789478551!5m2!1sde!2sjp"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>&copy; 2024 Rudolf Hoffmann. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

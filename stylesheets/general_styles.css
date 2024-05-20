@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+
+html {
+    box-sizing: border-box;
+    min-width: 20em;
+    min-height: 50em;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/*BACKGROUND Styles*/
+body {
+    background: linear-gradient(45deg, rgb(255, 179, 0), rgb(59, 189, 233));
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/*NAV Styles*/
+nav {
+    justify-items: center;
+    background-color: transparent;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+nav li {
+    padding: 0.2em 1em;
+    border-left: 0.2em solid black;
+}
+
+nav li a {
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    display: inline-block;
+    font-size: larger;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav li:first-child {
+    border-left: none
+}
+
+/*ARTICLE Styles*/
+article {
+    background-color: rgba(139, 81, 0, 0.41);
+    padding: 1.5em;
+    text-align: center;
+    margin: 3em;
+    border-radius: 3em;
+    outline: 0.2em solid black;
+}
+
+article:hover {
+    box-shadow: 0 0 2em rgba(251, 83, 83, 0.741);
+}
+
+article header {
+    text-align: center;
+}
+
+article ul {
+    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+}
+
+article p {
+    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+    text-align: center;
+    justify-self: center;
+}
+
+article p a {
+    color: black;
+    text-decoration: none;
+    font-size: calc(1vw + 1vh + 1vmin);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    outline: 0.2em solid black;
+    justify-self: center;
+    align-self: center;
+}
+
+/*SECTION Class Styles*/
+/*1 Rudolf Hoffmann*/
+.Rudolf_Hoffmann {
+    text-align: center;
+    padding-top: 33vh;
+    padding-bottom: 33vh;
+}
+
+/*2 Short Bio*/
+.Short_Bio {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+}
+
+.Short_Bio h2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    justify-self: center;
+    font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+}
+
+.Short_Bio img {
+    grid-column: 1;
+    grid-row: 2/ 3;
+}
+
+.Short_Bio ul {
+    grid-column: 2;
+    grid-row: 2;
+    line-height: 1.2em;
+}
+
+.Short_Bio p {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.Short_Bio #hiddenText {
+    display: none;
+    grid-column: 1/3;
+    grid-row: 4;
+    text-align: center;
+    justify-self: center;
+}
+
+/*3 Projects*/
+.gallery {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+.gallery ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.gallery ul li {
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    outline: 0.1em solid black;
+    background-color: rgba(139, 81, 0, 0.41);
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.gallery ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    outline: 0.2em solid black;
+}
+.gallery ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+/* #I{
+display: flex;
+}
+#II{
+display: none;
+}
+#III{
+display: none;
+}
+#IV{
+display: none;
+}
+#V{
+display: none;
+}
+#VI{
+display: none;
+}
+#VII{
+display: none;
+} */
+
+
+/*4 Work*/
+
+/*5 Contact*/
+.Contact ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact ul li a img {
+    width: 2em;
+    height: 2em;
+    outline: none;
+    border-radius: 0;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Contact ul li a img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.Contact iframe {
+    width: 50%;
+    height: 30vw;
+    border-radius: 1em;
+    outline: 0.2em solid black;
+    resize: both;
+}
+
+/*FOOTER Styles*/
+footer {
+    background-color: rgb(50, 50, 50);
+    padding: 1em;
+    margin-top: 5em;
+    text-align: center;
+    position: static;
+    width: 100%;
+    border: none;
+}
+
+footer p {
+    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    color: white;
+}
+/*OTHER Styles*/
+#map iframe {
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    outline: 0.2em solid black;
+}
+button{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: calc(1vw + 1vh + 1vmin);
+}
+button:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+#Work a, #Contact a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+#Work a:hover, #Contact a:hover {
+    color: rgb(41, 31, 183);
+    transition: color 0.3s ease-in-out;
+}
+
+#Work a:active, #Contact a:active {
+    color: rgb(228, 173, 9);
+}
+
+
