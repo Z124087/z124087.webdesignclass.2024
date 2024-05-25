@@ -49,7 +49,7 @@ nav li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
-    font-size: larger;
+    font-size: calc(1vw + 1vh);
     transform: scale(1);
 }
 nav li a:hover {
@@ -65,7 +65,7 @@ nav li:first-child {
 /*ARTICLE Styles*/
 article {
     background-color: rgba(101, 77, 43, 0.41);
-    padding: 1.5em;
+    padding: calc(1vw + 1vh);
     text-align: center;
     margin: calc(5vw);
     border-radius: 1.5em;
@@ -80,17 +80,19 @@ article header {
     text-align: center;
 }
 article h2{
-    font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+    font-size: calc(2vw + 2vh);
+    margin: 0;
+    padding: calc(1vw + 1vh);
 }
 article ul {
-    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+    font-size: calc(1vw + 1vh);
     justify-self: center;
     align-self: center;
     text-align: left;
 }
 
 article p {
-    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+    font-size: calc(1vw + 1vh);
     text-align: center;
     justify-self: center;
 }
@@ -98,7 +100,7 @@ article p {
 article p a {
     color: black;
     text-decoration: none;
-    font-size: calc(1vw + 1vh + 1vmin);
+    font-size: calc(1vw + 1vh);
 }
 
 article img {
@@ -128,10 +130,9 @@ article img {
 .Short_Bio h2 {
     grid-column: 1/3;
     grid-row: 1;
-    text-align: center;
-    justify-self: center;
-    font-size: calc(1.5vw + 1.5vh + 1.5vmin);
+    text-align: center;);
 }
+
 
 .Short_Bio img {
     grid-column: 1;
@@ -154,7 +155,7 @@ input[type='checkbox'] {
     display: none;
 }
 .wrap-collabsible {
-    margin: calc(1vw + 1vh + 1vmin);
+    margin: calc(1vw + 1vh);
     grid-column: 1/3;
     grid-row: 3;
 }
@@ -162,7 +163,7 @@ input[type='checkbox'] {
     display: block;
     font-weight: bold;
     font-family: monospace;
-    font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+    font-size: calc(1vw + 1vh);
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
@@ -217,12 +218,11 @@ input[type='checkbox'] {
 .gallery ul {
     display: grid;
     grid-template-columns: 0.4fr 2fr 1fr 2fr 0.4fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; /*0.2fr 0.2fr;*/
+    grid-template-rows: /*0.2fr*/ 0.2fr 0.2fr 0.2fr 0.2fr; /*0.2fr 0.2fr;*/
     list-style-type: none;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    row-gap: 1em;
 }
 
 .gallery ul li {
@@ -257,7 +257,7 @@ input[type='checkbox'] {
     display: grid;
     justify-content: center;
     align-items: center;
-    font-size: calc((1vw + 1vh + 1vmin)/1.5);
+    font-size: calc(1vw + 1vh);
 }
 .gallery ul li .collapsed{
     display: none;
@@ -267,7 +267,7 @@ input[type='checkbox'] {
     grid-column: 1/3;
     grid-row: 2;
     text-align: center;
-    font-size: calc((1vw + 1vh + 1vmin)/2);
+    font-size: calc(0.8vw + 0.8vh);
 }
 
 #I{
@@ -281,7 +281,7 @@ input[type='checkbox'] {
     grid-row: 2;
 }
 #III{
-    grid-column: 2/5;
+    grid-column: 1/4;
     grid-row: 3;
 }
 #IV{
@@ -289,7 +289,7 @@ input[type='checkbox'] {
     grid-row: 4;
 }
 #V{
-    grid-column: 2/5;
+    grid-column: 1/4;
     grid-row: 5;
 }
 #VI{
@@ -303,9 +303,6 @@ input[type='checkbox'] {
 /*4 Work*/
 .Work{
     padding: 0;
-}
-.Work h2{
-    padding-top: 1.5em;
 }
 .work_design {
     display: grid;
@@ -385,7 +382,7 @@ footer {
 }
 
 footer p {
-    font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+    font-size: calc(0.8vw + 0.8vh );
     color: white;
 }
 
@@ -420,5 +417,4 @@ footer p {
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
-    font-size: larger;
 }
