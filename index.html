@@ -12,22 +12,24 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#Rudolf_Hoffmann">Rudolf Hoffmann</a></li>
-                <li><a href="#Short_Bio">Short Bio</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="menu_links">
+            <nav>
+                <ul>
+                    <li><a href="#me">Rudolf Hoffmann</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="Rudolf_Hoffmann" id="Rudolf_Hoffmann">
+    <div class="Rudolf_Hoffmann" id="me">
         <h1>Rudolf Hoffmann</h1>
         <p>Student at HTW Berlin, Germany</p>
         <p>Computational Science and Engineering</p>
     </div>
-    <article class="Short_Bio" id="Short_Bio">
+    <article class="Short_Bio" id="bio">
         <h2>Short Bio</h2>
         <img src="images/profile_pic.png" alt="Profile Image" class="profile-image">
         <ul>
@@ -38,56 +40,72 @@
             <li>Major: Computational Science & Engineering (BA)</li>
             <li>Current Occupation: Exchange Student at SIT Tokyo, Japan</li>
         </ul>
-        <p><button onclick="toggleText('hiddenText')">Expand</button></p>
-        <div id="hiddenText">
-            <p>Hey, I am Rudolf and currently i a am in Tokyo, Japan taking part in the Sandwhich Programm of the
-                Shibaura Institute of Technology. I am studying Computational Science and Engineering at the HTW Berlin
-                and I am in my 6th semester. I am interested in Software Development, Data Science and Machine Learning.
-                I am looking forward to work on interesting projects and to meet new people. I am always open for new opportunities and
-                challenges. Feel free to contact me.
-            </p>
+        <div class="wrap-collabsible"> <input id="collapsible" class="toggle" type="checkbox"> <label for="collapsible"
+                class="lbl-toggle">More Info</label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <p> Hey, I am Rudolf and currently i a am in Tokyo, Japan taking part in the Sandwhich Programm of
+                        the
+                        Shibaura Institute of Technology. I am studying Computational Science and Engineering at the HTW
+                        Berlin
+                        and I am in my 6th semester. I am interested in Software Development, Data Science and Machine
+                        Learning.
+                        I am looking forward to work on interesting projects and to meet new people. I am always open
+                        for new
+                        opportunities and
+                        challenges. Feel free to contact me.</p>
+                </div>
+            </div>
         </div>
     </article>
-    <article class="Projects" id="Projects">
+    <article class="Projects" id="projects">
         <div class="section">
             <h2>Projects</h2>
             <div class="gallery">
                 <ul>
-                    <li id="I">2021 | University Project <br>Build your own Website | HTML, CSS, JavaScript </li>
-                    <li id="II">2022/23 | University Project <br>Powerpoint Add-On Featuring Image Generation | C#, REST</li>
-                    <li id="III">2023 | University Project <br>App Developement |Flutter(Dart), JavaScript, Arango DB, Postman</li>
-                    <li id="IV">2023/24 | University Project <br>Analogue/Digital Synthesizer | C++, C, Hardware</li>
-                    <li id="V">Formula Student greenBEAR</li>
-                    <li id="VI">Campus Kino</li>
-                    <li id="VII">StuPa</li>
+                    <!-- <li id="I"><img src="" alt="website"><p>2021 <br>Build your own Website <br> HTML, CSS, JavaScript </p><div class="collapsed"><br>THIS IS COLLAPSED</div></li> -->
+                    <li id="II"><img src="images/projects_pp_addon.png" alt="PowerPoint Add-on"><p>2022/23<br>Powerpoint Add-On Featuring Image Generation<br> C#, REST</p><div class="collapsed"><br>A Course called "Programming Project" in my University where students work together groups and have to deliver a finished project at the end of the semester. Our task was to build a power point add-on that enables the user to use a image generation service inside of power point. The add-on allows for specifying generation parameters, sending them to the rest service, getting updates on the status, receiving the results and saving the results temporarily for the user.</div></li>
+                    <li id="III"><img src="images/projects_app_dev.png" alt="webdev"><p>2023<br>App Developement<br>Flutter(Dart), JavaScript, Arango DB,
+                        Postman</p><div class="collapsed"><br>A course called "Softwaredevelopement project" in my University where students work together in groups and with a company to deliver a finished project or part at the end of the semester. We had to handle communication with the company and negotiating features. We worked on different features for an already existing calender app.</div></li>
+                    <li id="IV"><img src="images/projects_ad_synth.png" alt="A/D Synth"><p>2023/24 <br>Analogue/Digital Synthesizer<br>C++, C, Hardware</p><div class="collapsed"><br>A course called "interdisciplinary project" in my University where students work together in groups to deliver a finished project consisting of hardware and software components at the end of the semester. Our choosen topic was the design and build of a analogue/digital synthesizer. We set out to build a synthesizer which produces and modulates sound analogue. The output could also be used and changed via a desktop app.</div></li>
+                    <li id="V"><img src="images/projects_fs_team.jpg" alt="FS car"><p>Formula Student greenBEAR</p><div class="collapsed"><br>WELCOME TO GREENBEAR
+                        WE ARE THE FORMULA STUDENT TEAM OF THE UAS BERLIN!
+                        INITIALLY STARTED IN 2006, THE PROJECT HAS SEEN MANY MEMBERS OVER THE COURSE OF TIME WHO HAVE PRODUCED A TOTAL OF 13 RACE CARS. AFTER A BRIEF PAUSE OF TWO YEARS (2020 - 2022) HOWEVER, THE TEAM HAS NOW BEEN NEWLY FOUNDED.
+                        WITH NEW MEMBERS AND A NEW APPROACH, WE WANT TO BUILD ON PREVIOUS ACHIEVEMENTS. THEREFORE, WE ARE CONSTRUCTING THE FIRST FULLY ELECTRIC FORMULA STUDENT CAR IN THE HISTORY OF OUR UNIVERSITY. WITH THAT, OUR GOAL IS NO LESS THAN TO STIR UP THE FORMULA STUDENT EVENTS ACROSS EUROPE AND BEYOND!</div></li>
+                    <!-- <li id="VI"><img src="images/projects_campus_cinema.jpeg" alt="campuscinema"><p>Campus Kino</p><div class="collapsed"><br>THIS IS COLLAPSED</div></li> -->
+                    <!-- <li id="VII"><img src="images/projects_stupa.png" alt="student parlament"><p>StuPa</p><div class="collapsed"><br>THIS IS COLLAPSED</div></li> -->
                 </ul>
-                <div class="buttons"></div>
-                    <button onclick="toggleText('I')">I</button>
-                    <button onclick="toggleText('II')">II</button>
-                    <button onclick="toggleText('III')">III</button>
-                    <button onclick="toggleText('IV')">IV</button>
-                    <button onclick="toggleText('V')">V</button>
-                    <button onclick="toggleText('VI')">VI</button>
-                    <button onclick="toggleText('VII')">VII</button>
-                </div>
+            </div>
         </div>
     </article>
-    <article class="Work" id="Work">
+    <article class="Work" id="work">
         <div class="section">
             <h2>Work</h2>
-            <ul>
-                <li>Student Assistant at <a href="https://www.dzhw.eu/" target="_blank" title="Deutsche Zentrum für Hochschul- und Wissenschaftsforschung"> DZHW</a><br> Employment period: Feb 2023 to Feb 2024 <br> Worked on: NACAPS Panel Study <br> STATA and Tableau</li>
-                <li>Student Assistant at Project <a href="https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/projekt/?eid=3418" target="_blank" title=" TrustAdHocAI ">TAHAI</a> <br>Employment Period: June 2023 until today <br>Worked on: Image Classification Benchmarktool and Dashboard <br> python and streamlit</li>
+            <ul class="work_design">
+                <li class="work_left" ><a href="https://www.dzhw.eu/" target="_blank"
+                        title="Deutsche Zentrum für Hochschul- und Wissenschaftsforschung"> DZHW</a><br><br>Student Assistant<br> 
+                    Feb 2023 to Feb 2024 <br>NACAPS Panel Study <br> STATA and Tableau</li>
+                <li class="work_right"><a
+                        href="https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/projekt/?eid=3418"
+                        target="_blank" title=" TrustAdHocAI ">TAHAI</a> <br><br>Student Assistant<br>June 2023 until today
+                    <br>Image Classification Benchmarktool, Dashboard <br> python and streamlit
+                </li>
             </ul>
         </div>
     </article>
-    <article class="Contact" id="Contact">
+    <article class="Contact" id="contact">
         <div class="section">
-            <h2>Contact & Location</h2>
+            <h2>Contact</h2>
             <ul>
-                    <li><a href="mailto:your-email@example.com" target="_blank">Mail to</a> </li>
-                    <li><a href="https://github.com/your-github-profile" target="_blank">Github</a> </li>
-                    <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> </li>
+                <!-- <li><a href="mailto:your-email@example.com" target="_blank"><img
+                            src="images/Gmail_icon_(2020).svg" alt="Mail Logo"></a> </li>
+                <li><a href="https://github.com/your-github-profile" target="_blank"><img
+                            src="images/github-mark.svg" alt="GitHub Logo"></a> </li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img
+                            src="images/LinkedIn-In-Blue-96.png" alt="LinkedIn Logo"></a> </li> -->
+                <li><a href="mailto:your-email@example.com" target="_blank">Mail to</a> </li>
+                <li><a href="https://github.com/your-github-profile" target="_blank">Github</a> </li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> </li>
             </ul>
             <div id="map">
                 <iframe
