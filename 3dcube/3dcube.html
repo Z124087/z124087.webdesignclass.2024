@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rotating Cube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="cube">
+            <div class="face front" id="front">
+                <p>
+                <h1>Short Bio</h1>
+                <h3>Rudolf Hoffmann : name<br>24 : age<br>German : nationality<br>HTW Berlin : university<br>SIT Tokyo : exchange </h3><img src="../portfolio/images/profile_pic.png" alt="">
+                </p>
+            </div>
+            <div class="face back" id="back">
+                <p>
+                <h1>Contact</h1>
+                <h3> <a href="mailto:your-email@example.com" target="_blank"><img
+                            src="../portfolio/images/Gmail_icon_(2020).svg" alt="Mail Logo"></a>
+                    <a href="https://github.com/your-github-profile" target="_blank"><img
+                            src="../portfolio/images/github-mark.svg" alt="GitHub Logo"></a>
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img
+                            src="../portfolio/images/LinkedIn-In-Blue-96.png" alt="LinkedIn Logo"></a>
+                </h3>
+                </p>
+            </div>
+            <div class="face left">Work TD</div>
+            <div class="face right" id="right">
+                <p>
+                    Webseitenprojekt "Einführung Informatik" (HTML, CSS, JavaScript)<br><br>
+                    Programmierprojekt "PP Add-On" (C#, REST)<br><br>
+                    SoftwareProjekt "CleverTime" (Flutter(Dart), Node js, Arango DB, Postman)<br><br>
+                    Fachübergreifendes Projekt "AD Synth" (C++, C, RaspberryPi)<br><br>
+                    Formula Student greenBEAR<br><br>
+                    Campus Kino<br><br>
+                    StuPa
+                </p>
+            </div>
+            <div class="face top">
+                <p>
+                <h2>Rudolf Hoffmann</h2>
+                <p>Student at HTW Berlin, Germany <br> <br>
+                    Computational Science and Engineering</p>
+                </p>
+            </div>
+            <div class="face bottom">
+                <p>&copy; 2024 Rudolf Hoffmann. <br> All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button class="top_effect" onclick="rotateCube('top')">Home</button>
+        <button class="front_effect" onclick="rotateCube('front')">Short Bio</button>
+        <button class="left_effect" onclick="rotateCube('left')">Projects</button>
+        <button class="right_effect" onclick="rotateCube('right')">Work</button>
+        <button class="back_effect" onclick="rotateCube('back')">Contact</button>
+        <button class="bottom_effect" onclick="rotateCube('bottom')">Copyright</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
